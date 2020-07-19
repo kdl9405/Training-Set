@@ -1,0 +1,22 @@
+.locationButton{
+    width: 100px;
+    height: 100px;
+}
+
+.locationButtonDiv {
+    /* float: center; */
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.configulation{
+    text-align: center;
+    float: center;
+}
+
+header{
+    margin-bottom: 200px;
+}

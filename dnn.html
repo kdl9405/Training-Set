@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>DNN</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  </head>
+  <body>
+      <header>
+        <button class="backButton" onclick="window.history.back()">BACK</button>
+        <button class="dnnHelpPage" onclick="window.open('dnnhelp.html')">HELP</button>
+        <div class="configulation">
+            InputLayer Num : <input type="text" id="inputlayerNum"/><br>
+            Inputlayer Activation Function : 
+            <select name="ActivationFunction" class="activationFunction" id="inputActivationFunction">
+                <option value="sigmoid">SIGMOID</option>
+                <option value="relu">RELU</option>
+                <option value="softmax">SOFTMAX</option>
+                <option value="tanh">TANH</option>
+            </select><br>
+            HiddenLayer Num : <input type="text" id="hiddenlayerNum"/><br>
+            Hiddenlayer Activation Function :
+            <select name="ActivationFunction" class="activationFunction" id="hiddenActivationFunction">
+                <option value="sigmoid">SIGMOID</option>
+                <option value="relu">RELU</option>
+                <option value="softmax">SOFTMAX</option>
+                <option value="tanh">TANH</option>
+            </select><br>
+            HiddenLayer2 Num : <input type="text" id="hiddenlayer2Num"/><br>
+            Hiddenlayer2 Activation Function : 
+            <select name="ActivationFunction" class="activationFunction" id="hidden2ActivationFunction">
+                <option value="sigmoid">SIGMOID</option>
+                <option value="relu">RELU</option>
+                <option value="softmax">SOFTMAX</option>
+                <option value="tanh">TANH</option>
+            </select><br>
+            OutputLayer Num : <input type="text" id="outputlayerNum"/><br>
+            Outputlayer Activation Function :
+            <select name="ActivationFunction" class="activationFunction" id="outputActivationFunction">
+                <option value="sigmoid">SIGMOID</option>
+                <option value="relu">RELU</option>
+                <option value="softmax">SOFTMAX</option>
+                <option value="tanh">TANH</option>
+            </select><br>
+            Error Function : 
+            <select name="ErrorFunction" class="errorFunction" id="errorFunction">
+                <option value="mse">MSE</option>
+                <option value="crossEntropy">CROSS_ENTROPY</option>
+            </select><br>
+            Learing Rate : <input type="text" id="learningRate"/><br>
+            L2 Regulation : <input type="text" id="l2regulation"/>
+        </div>
+
+      </header>
+
+      <button>START</button>
+  </body>
+</html>
